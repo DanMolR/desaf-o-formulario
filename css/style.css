@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+form {
+	font-family: "Noto Sans";
+	width: 100%;
+	max-width: 564px;
+	margin: 50px auto;
+}
+
+label {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.input-texto {
+	height: 82px;
+	margin-bottom: 32px;
+	/* background-color: aqua; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	input {
+		width: 564px;
+		height: 56px;
+		padding: 15px;
+		font-size: 16px;
+		box-sizing: border-box;
+		border: 1px solid;
+		border-radius: 5px;
+	}
+}
+
+.opciones {
+	display: flex;
+	flex-direction: column;
+	/* background-color: red; */
+	margin-bottom: 32px;
+
+	div {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: 32px;
+
+		label {
+			font-weight: 350;
+			font-size: 16px;
+			gap: 32px;
+
+			input {
+				accent-color: #5D5FEF;
+				;
+				height: 20px;
+				width: 20px;
+				margin-right: 20px;
+				vertical-align: middle;
+			}
+		}
+
+		label:not(:last-child) {
+			margin-bottom: 32px;
+		}
+	}
+}
+
+.botones {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.botones button {
+	width: 172px;
+	height: 56px;
+	font-size: 16px;
+	border-radius: 8px;
+}
+
+.enviar {
+	background-color: white;
+	border: #5D5FEF 1px solid;
+	color: #5D5FEF;
+}
+
+.cancelar {
+	border: none;
+	background-color: #5D5FEF;
+	color: white;
+}
